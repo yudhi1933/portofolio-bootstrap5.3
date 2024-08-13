@@ -21,3 +21,15 @@ section {
     padding-top: 5rem;
 }
 
+#gallery {
+    background-color: #B38867;
+}
+
+.gallery-img {
+   width: 100%;
+
+}
+
+#gallery .row > *{
+    padding: 0;
+}

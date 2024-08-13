@@ -10,9 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="style.css" />
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body id="home">
     <!-- navbar start -->
@@ -45,7 +48,7 @@
     <section class="jumbotron text-center">
       <img src="img/profill.jpg" alt="Yudhi" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Yudhi</h1>
-      <p class="lead">Learning</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#DDBC95"
@@ -64,11 +67,17 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5">
-          <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque earum natus eos iste esse exercitationem nesciunt quis enim mollitia explicabo?</p>
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
+            <p>Saya seorang profesional di bidang pemasaran dengan pengalaman selama 5 tahun, memiliki kemampuan analitis yang kuat dalam          menghadapi tantangan bisnis.
+              Pendidikan saya di bidang teknik informatika dan saya sangat antusias dalam menggali potensi teknologi untuk menciptakan solusi inovatif.
+              Saya dapat menangani beberapa tugas sekaligus dalam sehari.
+              Saya menggunakan pendekatan kreatif untuk memecahkan masalah</p>
           </div>
-          <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum perferendis accusantium qui reiciendis tempore nemo harum quam, dolorum autem. Minima impedit corporis fuga unde soluta?</p>
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000"  data-aos-delay="200">
+            <p>Saya adalah orang yang dapat diandalkan dan disiplin waktu dalam menyelesaikan pekerjaan.
+              Saya adalah seorang komunikator yang efektif dan fasih dalam berbicara dengan semua tingkatan karyawan.
+              Saya adalah lulusan S1 Ekonomi Universitas Gadjah Mada, memiliki pengalaman magang di salah satu digital agency di Jakarta selama setahun. Saya adalah orang yang bertanggung jawab dan dapat diandalkan.
+              </p>
           </div>
         </div>
       </div>
@@ -90,7 +99,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3"  data-aos="flip-left" data-aos-duration="500">
             <div class="card">
               <img src="img/projects/Screenshot 1 2024-08-08.png" class="card-img-top" alt="projects 1" />
               <div class="card-body">
@@ -98,7 +107,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3" data-aos="flip-left" data-aos-duration="500"  data-aos-delay="100">
             <div class="card">
               <img src="img/projects/Screenshot 2 2024-08-08 .png" class="card-img-top" alt="projects 1" />
               <div class="card-body">
@@ -106,7 +115,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3" data-aos="flip-left" data-aos-duration="500"  data-aos-delay="200">
             <div class="card">
               <img src="img/projects/Screenshot 3 2024-08-09.png" class="card-img-top" alt="projects 1" />
               <div class="card-body">
@@ -114,7 +123,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3" data-aos="flip-left" data-aos-duration="500"  data-aos-delay="300">
             <div class="card">
               <img src="img/projects/Screenshot 2 2024-08-08 .png" class="card-img-top" alt="projects 2" />
               <div class="card-body">
@@ -122,7 +131,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3" data-aos="flip-left" data-aos-duration="500"  data-aos-delay="400">
             <div class="card">
               <img src="img/projects/Screenshot 2 2024-08-08 .png" class="card-img-top" alt="projects 2" />
               <div class="card-body">
@@ -130,7 +139,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3" data-aos="flip-left" data-aos-duration="500"  data-aos-delay="500">
             <div class="card">
               <img src="img/projects/Screenshot 2 2024-08-08 .png" class="card-img-top" alt="projects 2" />
               <div class="card-body">
@@ -149,8 +158,74 @@
       </svg>
     </section>
     <!-- projects end -->
+
+    <!-- gallery start -->
+    <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Gallery</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/1.jpg" alt="gambar 1" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/2.jpg" alt="gambar 2" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/3.jpg" alt="gambar 3" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/4.jpg" alt="gambar 4" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/5.jpg" alt="gambar 5" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/6.jpg" alt="gambar 6" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/7.jpg" alt="gambar 7" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/8.jpg" alt="gambar 8" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/9.jpg" alt="gambar 9" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/thumbnail/10.jpg" alt="gambar 10" class="img-fluid gallery-img">
+            </a>
+          </div>
+        </div> 
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#CDCDC0" fill-opacity="1" d="M0,224L48,234.7C96,245,192,267,288,234.7C384,203,480,117,576,106.7C672,96,768,160,864,160C960,160,1056,96,1152,74.7C1248,53,1344,75,1392,85.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <!-- gallery end -->
+
     <!-- contact start -->
-    <section id="contact" style="background-color: #b38867">
+    <section id="contact" style="background-color: #CDCDC0">
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
@@ -202,6 +277,33 @@
     <!-- footer end -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const galleryImage = document.querySelectorAll('.gallery-img');
+
+      galleryImage.forEach((img, i) => {
+        img.dataset.aos = 'fade-down';
+        img.dataset.aosDelay = i * 100;
+        img.dataset.aosDuration = 1000;
+
+      })
+
+      AOS.init({
+        once: true,
+      });
+    </script>
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.lead', {duration: 1.5, delay: 2, text:'is learning frontend'})
+      gsap.from('.jumbotron img', {duration: 1, rotateY: 360, opacity:0,});
+      gsap.from('.navbar', {duration:1.5, y:'-100%', opacity: 0, ease:'bounce'});
+      gsap.from('.display-4', {duration:1, x: -50, opacity: 0, delay: 0.5,ease:'back'});
+    </script>
 
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbyhMvMZhNoiXmrth89ZtXdRoF8SXNwZtd6G1pOlWSOrsXmRp9R7gNTbnzksERR-3W0C/exec';
