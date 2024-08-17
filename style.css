@@ -33,3 +33,95 @@ section {
 #gallery .row > *{
     padding: 0;
 }
+
+/* my gallery  */
+.gallery-box {
+    position: relative;
+    background-color: #CDCDC0;
+    border-radius: 10px;
+    margin: 16px;
+    height: 500px;
+    transform-style: preserve-3d;
+}
+
+.gallery-box::before {
+    content: 'MY';
+    position: absolute;
+    color: #fff;
+    font-size: 6rem;
+    font-weight: bold;
+    font-style: italic;
+    top: 30px;
+    left: -100px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.gallery-box:hover::before {
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0.2;
+}
+
+.gallery-box::after {
+    content: 'GALLERY';
+    position: absolute;
+    color: #fff;
+    font-size: 5rem;
+    font-weight: bold;
+    font-style: italic;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.gallery-box:hover::after {
+    opacity: 0.2;
+}
+
+.gallery-name {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    opacity: 0;
+    transform: translate3d(0, 0, 50px);
+    transition: 0.5s;
+}
+.gallery-box:hover .gallery-name {
+    top: 2%;
+    opacity: 1;
+
+}
+
+.gallery-detail-button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate3d(-50%, 0 ,90px);
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.gallery-box:hover .gallery-detail-button {
+    opacity: 1;
+    bottom: 15px;
+}
+
+.my-gallery-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 80px);
+    max-width: 270px;
+    transition: 0.5s;
+}
+
+.gallery-box:hover .my-gallery-img {
+    transform: translate3d(-50%, -50%, 80px) rotate(10deg) scale(1.2);
+}
